@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Form</title>
+    </head>
+    <style>
+        h2{
+            margin-top: 50px;
+            text-align: center;
+            color: #f0f0f0;
+        }
+        .formDiv{
+            border: 1px solid #333;
+            width: fit-content;
+            text-align: center;
+            margin-left: 37%;
+            padding: 10px 20px;
+            background-color: rgb(202, 215, 223);
+        }
+        label, input{
+            padding: 7px 15px;
+        }
+        form tr{
+            margin-bottom: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        body{
+            background-image: url("textureBg1.jpg");
+        }
+        .btn{
+            background-color: dimgray;
+        }
+    </style>
+    <body>
+        <h2> Login Form </h2>
+        <div class="formDiv">
+            <table>
+                <form>
+                    <tr>
+                        <td>
+                            <label for="username">Username:</label>
+                        </td>
+                        <td>
+                            <input id="username" type="text" name="username" placeholder="Enter your username" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">Password:</label>
+                        </td>
+                        <td>
+                            <input id="password" type="password" name="password" placeholder="Enter your passowrd" minlength="8" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input class="btn" style="float: right; margin: 10px 0;" type="submit" value="Submit" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Create an Account? <a href="signup.html"><span style="color: #f44">SignUp Now</a></span></td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+    </body>
+</html>

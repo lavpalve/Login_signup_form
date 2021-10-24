@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Signup Form</title>
+    </head>
+    <style>
+        h2{
+            margin-top: 50px;
+            text-align: center;
+            color: #f0f0f0;
+        }
+        .formDiv{
+            border: 1px solid #333;
+            width: fit-content;
+            text-align: center;
+            margin-left: 37%;
+            padding: 10px 20px;
+            background-color: rgb(28, 111, 235);
+        }
+        label, input{
+            padding: 7px 15px;
+        }
+        form tr{
+            margin-bottom: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        body{
+            background-image: url("textureBg2.jpg");
+        }
+    </style>
+    <body>
+        <h2> SignUp Form </h2>
+        <div class="formDiv">
+            <table>
+                <form>
+                    <tr>
+                        <td>
+                            <label for="name">Name:</label>
+                        </td>
+                        <td>
+                            <input id="name" type="text" name="name" placeholder="Full Name" pattern="[A-Za-z]" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Email:</label>
+                        </td>
+                        <td>
+                            <input id="email" type="email" name="email" placeholder="Your Email address" pattern="[.+@gmail.com]" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="username">Username:</label>
+                        </td>
+                        <td>
+                            <input id="username" type="text" name="username" placeholder="Username" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">Password:</label>
+                        </td>
+                        <td>
+                            <input id="password" type="password" name="password" placeholder="Passowrd" minlength="8" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="comfirmPswd">Confirm Password:</label>
+                        </td>
+                        <td>
+                            <input id="comfirmPswd" type="password" name="comfirmPswd" placeholder="Confirm Password" minlength="8" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input style="float: right; margin: 10px 0;" type="submit" value="Submit" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Already have an account? <a href="index.html"><span style="color: #f0f0f0">Login Now</a></span></td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+    </body>
+</html>
