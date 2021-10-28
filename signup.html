@@ -1,89 +1,102 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Signup Form</title>
+        <title>SignUp Form</title>
     </head>
     <style>
-        h2{
-            margin-top: 50px;
+        .titleBox{
+            margin-bottom: 30px;
             text-align: center;
+        }
+        .titleName{
             color: #f0f0f0;
+            font-size: 22px;
+            padding: 10px 10px 5px 10px;
+            margin-bottom: 30px;
+        }
+        .active{
+            border-bottom: 2px solid rgb(8, 172, 201);
         }
         .formDiv{
             border: 1px solid #333;
-            width: fit-content;
-            text-align: center;
-            margin-left: 37%;
-            padding: 10px 20px;
-            background-color: rgb(28, 111, 235);
+            width: 40%;
+            height: auto;
+            margin-left: 25%;
+            margin-top: 7%;
+            padding: 30px;
+            justify-content: center;
+            background-color: rgb(5,5,5,0.3);
+            border: 8px solid #d6d6e6;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgb(4, 155, 241);
         }
-        label, input{
+        label{
+            color: #f0f0f0;
+            font-size: 20px;
+        }
+        input, [type="button"]{
             padding: 7px 15px;
+            width: 40%;
+            background: #0f0f0faa;
+            color: #f0f0f0;
+            width: max-content;
+        }
+
+        input:hover, [type="button"]:hover{
+            transform: scale(1.05);
+        }
+
+        [type="button"]{
+            padding: 7px 15px;
+            width: 30%;
+            background: #0f0f0faa;
+            color: #f0f0f0;
+            font-size: 20px;
         }
         form tr{
             margin-bottom: 20px;
         }
         a{
             text-decoration: none;
+            color: #f0f0f0;
         }
         body{
-            background-image: url("textureBg2.jpg");
+            background:linear-gradient(to right, #cc19cfc9, #193acfbe),url("White-brick-wall-background.jpg");
+            
+        }
+        .btn{
+            background-color: dimgray;
+        }
+        table{
+            margin: auto;
         }
     </style>
     <body>
-        <h2> SignUp Form </h2>
         <div class="formDiv">
-            <table>
-                <form>
-                    <tr>
-                        <td>
-                            <label for="name">Name:</label>
-                        </td>
-                        <td>
-                            <input id="name" type="text" name="name" placeholder="Full Name" pattern="[A-Za-z]" required/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="email">Email:</label>
-                        </td>
-                        <td>
-                            <input id="email" type="email" name="email" placeholder="Your Email address" pattern="[.+@gmail.com]" required/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="username">Username:</label>
-                        </td>
-                        <td>
-                            <input id="username" type="text" name="username" placeholder="Username" required/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="password">Password:</label>
-                        </td>
-                        <td>
-                            <input id="password" type="password" name="password" placeholder="Passowrd" minlength="8" required/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="comfirmPswd">Confirm Password:</label>
-                        </td>
-                        <td>
-                            <input id="comfirmPswd" type="password" name="comfirmPswd" placeholder="Confirm Password" minlength="8" required/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><input style="float: right; margin: 10px 0;" type="submit" value="Submit" /></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">Already have an account? <a href="index.html"><span style="color: #f0f0f0">Login Now</a></span></td>
-                    </tr>
-                </form>
-            </table>
-        </div>
+            <form>
+                <div class="titleBox"><span class="titleName"><a href="index.html">LogIn</a></span><span class="titleName active"><a href="signup.html">SignUp</a></span></div>
+                <table>
+                    <tr><td><label for="name">Name:</label></td>
+                    <td><input id="name" type="text" placeholder="Your Full Name" pattern="[a-zA-Z]"/></td></tr>
+                    
+                    <tr><td><label for="email">Email:</label></td>
+                        <td><input id="email" type="email" placeholder="Your Email" pattern=".+@gmail.com"/></td></tr>
+                    
+                    <tr><td><label for="phone">Phone: +91</label></td>
+                        <td><input id="phone" type="tel" placeholder="Phone Number" pattern="[0-9]"/></td></tr>
+                    
+                    <tr><td><label for="password">Password:</label></td>
+                        <td><input id="password" type="password" placeholder="Your Password" pattern=""/></td></tr>
+                    
+                    <tr><td><label for="confPassword">Confirm Password:</label></td>
+                        <td><input id="confPassword" type="password" placeholder="Confirm Password" pattern=""/></td></tr>
+                    <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+                    <tr><td colspan="2" style="text-align: center;"><input id="termAnCon" type="checkbox" name="termAnCon" />
+                    <label for="termAnCon">I accept the term and conditions</label></td></tr>
+                    <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+                    <tr><td colspan="2" style="text-align: center;"><input type="button" value="SignUp" /></td></tr>
+                </table>
+            </form>
+        
     </body>
 </html>
